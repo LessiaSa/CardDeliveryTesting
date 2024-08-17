@@ -14,8 +14,8 @@ import static com.codeborne.selenide.Selenide.$;
 public class CardDeliveryDateTest {
     private String generateDate(long addDays, String pattern) {
         /*new() -возвращает текущую дату
-        * plusDays()- добавляет к дате нужное количество дней вперед
-        *format(DateTimeFormatter.ofPattern(pattern)- форматирует дату в String из типа LocalDate */
+         * plusDays()- добавляет к дате нужное количество дней вперед
+         *format(DateTimeFormatter.ofPattern(pattern)- форматирует дату в String из типа LocalDate */
         return LocalDate.now().plusDays(addDays).format(DateTimeFormatter.ofPattern(pattern));
     }
 
