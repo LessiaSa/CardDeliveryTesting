@@ -15,7 +15,8 @@ public class CardDeliveryDateTest {
     private String generateDate(long addDays, String pattern) {
         /*new() -возвращает текущую дату
          * plusDays()- добавляет к дате нужное количество дней вперед
-         *format(DateTimeFormatter.ofPattern(pattern)- форматирует дату в String из типа LocalDate */
+         *format(DateTimeFormatter Форматирует эту дату с помощью указанного средства форматирования
+         .ofPattern(pattern)- принимает в качестве параметра строку-шаблон, возвращает объект типа DateTimeFormatter */
         return LocalDate.now().plusDays(addDays).format(DateTimeFormatter.ofPattern(pattern));
     }
 
